@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="phaser.js"></script>
+    <script type="text/javascript" src="phaser-plugin-isometric.js"></script>
+    <script type="text/javascript" src="boot.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+    <script>
+        (function(){
+            var game = new Phaser.Game(800,400, Phaser.AUTO,'game', null, true, false);
+        game.state.add('Boot',boot);
+	game.state.add('Gameplay',gameplay);
+        game.state.start('Boot');
+        })();
+    </script>
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
